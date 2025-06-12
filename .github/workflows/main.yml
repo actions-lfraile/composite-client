@@ -13,3 +13,6 @@ jobs:
           who-to-greet: lfraile
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
+      - uses: ./another-composite
+        with:
+          who-to-greet-local: lfraile

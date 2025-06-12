@@ -1,0 +1,12 @@
+name: 'Hello World local composite'
+description: 'Greet someone'
+inputs:
+  who-to-greet-local:  # id of input
+    description: 'Who to greet locally'
+    required: true
+    default: 'World'
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello locally ${{ inputs.who-to-greet-local }}.
+      shell: bash
