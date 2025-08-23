@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lfraileorg/composite-action@main
+      - uses: actions-lfraile/composite-action@main
         id: foo
         with:
           who-to-greet: lfraile
